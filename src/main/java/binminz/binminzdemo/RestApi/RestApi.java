@@ -87,7 +87,6 @@ public class RestApi {
 
             System.out.println("result>>>>>>>>>>>>" + jsonInString);
 
-
         } catch (HttpClientErrorException | HttpServerErrorException e) {
             result.put("statusCode", e.getRawStatusCode());
             result.put("body"  , e.getStatusText());

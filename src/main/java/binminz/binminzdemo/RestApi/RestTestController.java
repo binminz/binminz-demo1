@@ -74,7 +74,7 @@ public class RestTestController {
 
             JSONObject jsonObject = XML.toJSONObject(result.toString());
             jsonPrintString = jsonObject.toString();
-
+            return jsonPrintString;
             //파싱해서 TITLE만 가져와보기
 
         } catch (Exception e) {
